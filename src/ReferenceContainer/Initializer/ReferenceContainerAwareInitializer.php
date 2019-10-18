@@ -1,11 +1,11 @@
 <?php
 
 
-namespace Atamis\Extension\ReferenceContainer\Initializer;
+namespace ReferenceContainer\Initializer;
 
 use Behat\Behat\Context\Context;
 use Behat\Behat\Context\Initializer\ContextInitializer;
-use Atamis\Extension\ReferenceContainer\Interfaces\ReferenceContainerAware;
+use ReferenceContainer\Interfaces\ReferenceContainerAware;
 
 class ReferenceContainerAwareInitializer implements ContextInitializer
 {
@@ -13,7 +13,7 @@ class ReferenceContainerAwareInitializer implements ContextInitializer
     
     public function __construct(string $referenceContainer)
     {
-        $container = "Atamis\Extension\\ReferenceContainer\\Container\\$referenceContainer";
+        $container = "ReferenceContainer\\Container\\$referenceContainer";
         $this->referenceContainer = new $container;
     }
     

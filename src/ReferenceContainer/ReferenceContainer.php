@@ -1,6 +1,6 @@
 <?php
 
-namespace Atamis\Extension\ReferenceContainer;
+namespace ReferenceContainer;
 
 use Behat\Testwork\ServiceContainer\ExtensionManager;
 use Symfony\Component\Config\Definition\Builder\ArrayNodeDefinition;
@@ -55,7 +55,7 @@ class ReferenceContainer implements Extension
      */
     public function load(ContainerBuilder $container, array $config)
     {
-        $definition = new Definition('Atamis\Extension\ReferenceContainer\Initializer\ReferenceContainerAwareInitializer', [
+        $definition = new Definition('ReferenceContainer\Initializer\ReferenceContainerAwareInitializer', [
             $config['container']
         ]);
         $definition->addTag(ContextExtension::INITIALIZER_TAG, ['priority' => 0]);

@@ -1,6 +1,6 @@
 <?php
 
-namespace Atamis\Extension\ReferenceContainer\Exception;
+namespace ReferenceContainer\Exception;
 
 use Exception;
 

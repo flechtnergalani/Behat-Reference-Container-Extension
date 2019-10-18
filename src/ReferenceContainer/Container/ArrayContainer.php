@@ -1,9 +1,9 @@
 <?php
 
-namespace Atamis\Extension\ReferenceContainer\Container;
+namespace ReferenceContainer\Container;
 
 use Symfony\Component\PropertyAccess\PropertyAccess;
-use Atamis\Extension\ReferenceContainer\Exception\ReferenceNotFoundException;
+use ReferenceContainer\Exception\ReferenceNotFoundException;
 
 /**
  * Container storing all references and their associated items in memory.
@@ -118,7 +118,7 @@ class ArrayContainer
         }
         return $this->accessor->getValue($this->container, $name);
     }
-
+    
     public function getReferenceWhere($name, callable $condition)
     {
         if (!$this->hasReference($name)) {

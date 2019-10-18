@@ -1,0 +1,19 @@
+{
+    "name": "flechtnergalani/behat-reference-container",
+    "description": "Extension to store references",
+    "license": "MIT",
+    "authors": [
+        {
+            "name" : "Raphael Flechtner",
+            "email" : "flechtner@galaniprojects.de"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "ReferenceContainer": "src"
+        }    
+    },
+    "require": {
+        "symfony/property-access": "^4.3"
+    }
+}

@@ -1,6 +1,6 @@
 <?php
 
-namespace Atamis\Extension\ReferenceContainer\Interfaces;
+namespace ReferenceContainer\Interfaces;
 
 
 interface ReferenceContainerAware
